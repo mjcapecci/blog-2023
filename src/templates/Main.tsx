@@ -30,14 +30,17 @@ const Main = (props: IMainProps) => (
               </Link>
             </li>
             <li className="mr-6">
+              <Link href="/apps">
+                <a>Apps</a>
+              </Link>
+            </li>
+            <li className="mr-6">
               <Link href="/about/">
                 <a>About</a>
               </Link>
             </li>
             <li className="mr-6">
-              <a href="https://github.com/ixartz/Next-js-Blog-Boilerplate">
-                GitHub
-              </a>
+              <a href="https://github.com/mjcapecci">GitHub</a>
             </li>
           </Navbar>
         </div>
@@ -51,12 +54,6 @@ const Main = (props: IMainProps) => (
           ♥
         </span>{' '}
         by <a href="https://creativedesignsguru.com">CreativeDesignsGuru</a>
-        {/*
-         * PLEASE READ THIS SECTION
-         * We'll really appreciate if you could have a link to our website
-         * The link doesn't need to appear on every pages, one link on one page is enough.
-         * Thank you for your support it'll mean a lot for us.
-         */}
       </div>
     </div>
   </div>
