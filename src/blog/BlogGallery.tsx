@@ -4,19 +4,23 @@ import { format } from 'date-fns';
 import Link from 'next/link';
 
 import { Pagination, IPaginationProps } from '../pagination/Pagination';
-import { PostItems } from '../utils/Content';
+import { PostItems, AppItems } from '../utils/Content';
 
 export type IBlogGalleryProps = {
-  posts: PostItems[];
+  items: PostItems[] | AppItems[];
+  itemType: 'posts' | 'apps';
   pagination: IPaginationProps;
 };
 
 const BlogGallery = (props: IBlogGalleryProps) => (
   <>
     <ul>
-      {props.posts.map((elt) => (
+      {props.items.map((elt) => (
         <li key={elt.slug} className="mb-3 flex justify-between">
-          <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
+          <Link
+            href={`/${props.itemType}/[slug]`}
+            as={`/${props.itemType}/${elt.slug}`}
+          >
             <a>
               <h2>{elt.title}</h2>
             </a>
