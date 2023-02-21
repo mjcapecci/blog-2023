@@ -1,8 +1,8 @@
 ---
-title: 'My forth post'
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-date: '2020-07-07'
-modified_date: '2020-07-07'
+title: 'Simple Pomodoro'
+description: A simple pomodoro timer.
+date: '2023-02-20'
+modified_date: '2023-02-20'
 image: /assets/images/posts/random-img.jpg
 ---
 
