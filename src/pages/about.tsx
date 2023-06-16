@@ -2,7 +2,6 @@ import React from 'react';
 
 import Image from 'next/image';
 
-import profileImage from '../../public/profile.jpg';
 import { Content } from '../content/Content';
 import { Meta } from '../layout/Meta';
 import { Main } from '../templates/Main';
@@ -22,7 +21,8 @@ const About = () => (
         }}
       >
         <Image
-          src={profileImage}
+          src="/profile-picture.jpg"
+          loader={({ src }) => `https://ik.imagekit.io/gib0zkfpk${src}`}
           width={300}
           height={300}
           alt="Michael's profile picture"
