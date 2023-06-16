@@ -27,11 +27,12 @@ const PrivacyPolicy = () => {
           <h2>1. Introduction</h2>
           <p>
             This privacy policy governs your use of the software application
-            Simple Pomodoro ("Application") for mobile devices that was created
-            by Michael Capecci Development. We at Michael Capecci Development
-            recognize the importance of your privacy and have outlined our
-            policy as it pertains to the collection, use, and disclosure of any
-            information you provide while using our Application.
+            Simple Pomodoro (&ldquo;Application&rdquo;) for mobile devices that
+            was created by Michael Capecci Development. We at Michael Capecci
+            Development recognize the importance of your privacy and have
+            outlined our policy as it pertains to the collection, use, and
+            disclosure of any information you provide while using our
+            Application.
           </p>
           <h2>2. Information Collection and Use</h2>
           <p>
@@ -53,7 +54,7 @@ const PrivacyPolicy = () => {
             physical, electronic, and managerial procedures to safeguard and
             secure the information we collect.
           </p>
-          <h2>4. Children's Privacy</h2>
+          <h2>4. Children&apos;s Privacy</h2>
           <p>
             This Application does not address anyone under the age of 13. We do
             not knowingly collect personally identifiable information from
