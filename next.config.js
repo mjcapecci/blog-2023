@@ -9,6 +9,11 @@ module.exports = withBundleAnalyzer({
   poweredByHeader: false,
   trailingSlash: true,
   basePath: baseUrl,
+  images: {
+    domains: ['imagekit.io'], // replace with your image host domain
+    loader: 'custom',
+    path: 'https://ik.imagekit.io/gib0zkfpk/', // replace with your image host path
+  },
   env: {
     baseUrl,
   },
