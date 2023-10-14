@@ -11,13 +11,13 @@ const PrivacyPolicy = () => {
     <Main
       meta={
         <Meta
-          title={'Simple Pomodoro Privacy Policy'}
-          description={'Simple Pomodoro Privacy Policy'}
+          title={'Simply Pomodoro Privacy Policy'}
+          description={'Simply Pomodoro Privacy Policy'}
         />
       }
     >
       <h1 className="text-center font-bold text-3xl text-gray-200">
-        Simple Pomodoro Privacy Policy
+        Simply Pomodoro Privacy Policy
       </h1>
       <div className="text-center text-sm mb-8">
         {format(new Date('June 15, 2023'), 'LLLL d, yyyy')}
@@ -27,7 +27,7 @@ const PrivacyPolicy = () => {
           <h2>1. Introduction</h2>
           <p>
             This privacy policy governs your use of the software application
-            Simple Pomodoro (&ldquo;Application&rdquo;) for mobile devices that
+            Simply Pomodoro (&ldquo;Application&rdquo;) for mobile devices that
             was created by Michael Capecci Development. We at Michael Capecci
             Development recognize the importance of your privacy and have
             outlined our policy as it pertains to the collection, use, and
@@ -36,7 +36,7 @@ const PrivacyPolicy = () => {
           </p>
           <h2>2. Information Collection and Use</h2>
           <p>
-            The Simple Pomodoro Application does not collect or transmit any
+            The Simply Pomodoro Application does not collect or transmit any
             personally identifiable information about you, such as your name,
             address, phone number or email address. The Application does store
             certain non-personal identifiable information locally on your
@@ -74,7 +74,7 @@ const PrivacyPolicy = () => {
             If you have any questions or suggestions about our Privacy Policy,
             do not hesitate to contact us at michael@michaelcapecci.com..
           </p>
-          <h2>Last updated on June 15th, 2023</h2>
+          <h2>Last updated on September 23rd, 2023</h2>
         </div>
       </Content>
     </Main>

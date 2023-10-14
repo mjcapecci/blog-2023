@@ -30,44 +30,36 @@ const About = () => (
       </div>
 
       <p>
-        Hello! I&apos;m a software engineer hailing from the vibrant city of
-        Chicago, Illinois. With a strong penchant for problem-solving and a
-        drive to make digital concepts tangible, I&apos;ve spent my career
-        harnessing the power of JavaScript and TypeScript, and crafting
-        exceptional web experiences using React.
+        Hello! I am a software engineer based in Chicago, Illinois, with a focus
+        on problem-solving and a proficiency in JavaScript, TypeScript, and
+        React for web development. My career has centered around creating
+        exceptional web experiences.
       </p>
 
       <p>
-        E-commerce has always held a special place in my heart. It&apos;s the
-        perfect intersection of technology and real-world results, where I can
-        see the direct impact of my code in the online shopping experiences that
-        people interact with daily. There&apos;s something truly satisfying
-        about watching lines of code transform into a fully operational online
-        store, and I&apos;m grateful for the many opportunities I&apos;ve had to
-        contribute to this exciting field.
+        E-commerce is a field I am particularly passionate about. I find
+        satisfaction in witnessing the direct impact of my code on online
+        shopping experiences. I have enjoyed numerous opportunities to
+        contribute to this sector.
       </p>
 
       <p>
-        Recently, I&apos;ve been delving into the possibilities presented by
-        React Native and similar technologies. These technologies have opened up
-        a new frontier for me, enabling the translation of web experiences to
-        mobile platforms seamlessly. It&apos;s another step in making my work
-        even more tangible and impactful, as it enters the hands of users
-        worldwide.
+        Recently, I&apos;ve been exploring technologies like React Native, which
+        extend the reach of web experiences to mobile platforms. This expansion
+        allows me to make my work more accessible and impactful.
       </p>
 
       <p>
-        Beyond my technical skills, I bring to the table a curiosity that never
-        stops and a dedication to continually evolving alongside the dynamic
-        tech industry. I&apos;m excited to take on new challenges, learn more,
-        and create digital solutions that have real, meaningful impacts.
+        In addition to my technical skills, I maintain a strong sense of
+        curiosity and a commitment to keeping pace with the evolving tech
+        industry. I am eager to tackle new challenges, expand my knowledge, and
+        create meaningful digital solutions.
       </p>
 
       <p>
-        If you&apos;re interested in talking tech, e-commerce, or just want to
-        chat about the latest innovations, don&apos;t hesitate to get in touch.
-        Let&apos;s explore the incredible possibilities the digital world holds
-        together!
+        If you&apos;d like to discuss technology, e-commerce, or engage in a
+        conversation about the latest innovations, please feel free to reach
+        out. I am eager to explore the vast possibilities of the digital world.
       </p>
     </Content>
   </Main>
