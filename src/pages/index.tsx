@@ -10,15 +10,12 @@ import { AppConfig } from '../utils/AppConfig';
 import { getAllPosts } from '../utils/Content';
 
 const Index = (props: IBlogGalleryProps) => (
-  <Main
-    meta={
-      <Meta
-        title="Made with Next.js, TypeScript, ESLint, Prettier, PostCSS, Tailwind CSS"
-        description={AppConfig.description}
-      />
-    }
-  >
-    <BlogGallery posts={props.posts} pagination={props.pagination} />
+  <Main meta={<Meta title="Portfolio" description={AppConfig.description} />}>
+    <BlogGallery
+      items={props.items}
+      pagination={props.pagination}
+      itemType="posts"
+    />
   </Main>
 );
 
@@ -32,8 +29,9 @@ export const getStaticProps: GetStaticProps<IBlogGalleryProps> = async () => {
 
   return {
     props: {
-      posts: posts.slice(0, AppConfig.pagination_size),
+      items: posts.slice(0, AppConfig.pagination_size),
       pagination,
+      itemType: 'posts',
     },
   };
 };

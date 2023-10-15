@@ -16,7 +16,11 @@ type IPageUrl = {
 
 const PaginatePosts = (props: IBlogGalleryProps) => (
   <Main meta={<Meta title="Lorem ipsum" description="Lorem ipsum" />}>
-    <BlogGallery posts={props.posts} pagination={props.pagination} />
+    <BlogGallery
+      items={props.items}
+      pagination={props.pagination}
+      itemType="posts"
+    />
   </Main>
 );
 
@@ -62,8 +66,9 @@ export const getStaticProps: GetStaticProps<
 
   return {
     props: {
-      posts: pages[currentInd],
+      items: pages[currentInd],
       pagination,
+      itemType: 'posts',
     },
   };
 };

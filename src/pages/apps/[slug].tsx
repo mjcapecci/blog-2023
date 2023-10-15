@@ -6,14 +6,14 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import { Content } from '../../content/Content';
 import { Meta } from '../../layout/Meta';
 import { Main } from '../../templates/Main';
-import { getAllPosts, getPostBySlug } from '../../utils/Content';
+import { getAllApps, getAppBySlug } from '../../utils/Content';
 import { markdownToHtml } from '../../utils/Markdown';
 
-type IPostUrl = {
+type IAppUrl = {
   slug: string;
 };
 
-type IPostProps = {
+type IAppProps = {
   title: string;
   description: string;
   date: string;
@@ -22,7 +22,7 @@ type IPostProps = {
   content: string;
 };
 
-const DisplayPost = (props: IPostProps) => (
+const DisplayApps = (props: IAppProps) => (
   <Main
     meta={
       <Meta
@@ -52,23 +52,23 @@ const DisplayPost = (props: IPostProps) => (
   </Main>
 );
 
-export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
-  const posts = getAllPosts(['slug']);
+export const getStaticPaths: GetStaticPaths<IAppUrl> = async () => {
+  const apps = getAllApps(['slug']);
 
   return {
-    paths: posts.map((post) => ({
+    paths: apps.map((app) => ({
       params: {
-        slug: post.slug,
+        slug: app.slug,
       },
     })),
     fallback: false,
   };
 };
 
-export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
+export const getStaticProps: GetStaticProps<IAppProps, IAppUrl> = async ({
   params,
 }) => {
-  const post = getPostBySlug(params!.slug, [
+  const app = getAppBySlug(params!.slug, [
     'title',
     'description',
     'date',
@@ -77,18 +77,18 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
     'content',
     'slug',
   ]);
-  const content = await markdownToHtml(post.content || '');
+  const content = await markdownToHtml(app.content || '');
 
   return {
     props: {
-      title: post.title,
-      description: post.description,
-      date: post.date,
-      modified_date: post.modified_date,
-      image: post.image,
+      title: app.title,
+      description: app.description,
+      date: app.date,
+      modified_date: app.modified_date,
+      image: app.image,
       content,
     },
   };
 };
 
-export default DisplayPost;
+export default DisplayApps;
